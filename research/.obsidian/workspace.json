@@ -1,0 +1,193 @@
+{
+  "main": {
+    "id": "bfbdb929250e7a59",
+    "type": "split",
+    "children": [
+      {
+        "id": "8cf9e030e9f8fc63",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ffd2179ba08b06c3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Researches - Initial phases.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Researches - Initial phases"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "676d1ef67e0a73a3",
+    "type": "split",
+    "children": [
+      {
+        "id": "fa14a86c3a17f40b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c2cb411870ec38d0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "eed434703ab7ed0c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "551fa19fad5b271b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "68c2b808baca62d5",
+    "type": "split",
+    "children": [
+      {
+        "id": "290da6e1ddf00ece",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "25a87dd8b42d7b50",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Researches - Initial phases.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Researches - Initial phases"
+            }
+          },
+          {
+            "id": "253af661cc52376a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Researches - Initial phases.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Researches - Initial phases"
+            }
+          },
+          {
+            "id": "abaeff5709d1271d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "8ad556a7e780fab8",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "481bc952be377b59",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Researches - Initial phases.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Researches - Initial phases"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "ffd2179ba08b06c3",
+  "lastOpenFiles": [
+    "Untitled.base",
+    "Researches - Initial phases.md",
+    "directions/1. Digital devices in alternatives childhoods.md",
+    "directions"
+  ]
+}
