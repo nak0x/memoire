@@ -10,7 +10,7 @@ Full license text: https://creativecommons.org/licenses/by/4.0/
 ### 1. Verbatim Use
 When reproducing or redistributing this work **without modification**, you must credit the author as:
 
-> **Author:** [Your Name]
+> **Author:** Théo P. A. Lesage
 
 This applies to full reproduction, partial excerpts, and any redistribution of the original content as-is.
 
@@ -19,7 +19,7 @@ This applies to full reproduction, partial excerpts, and any redistribution of t
 ### 2. Derivative Works
 When producing a **modified, adapted, translated, or extended** version of this work — in whole or in part — you must credit the original author as a **source of inspiration**, not as an author, co-author, or contributor:
 
-> **Inspired by the work of:** [Your Name]
+> **Inspired by the work of:** Théo P. A. Lesage
 
 This distinction is essential: the above credit signals that the derivative work has **not been reviewed, approved, or endorsed** by the original author.
 
@@ -28,9 +28,9 @@ This distinction is essential: the above credit signals that the derivative work
 ### 3. Prohibited Attribution Forms on Derivatives
 When distributing a derivative work, **the following are explicitly forbidden** unless prior written consent has been granted by the author:
 
-- Crediting [Your Name] as **Author** of the derivative
-- Crediting [Your Name] as **Co-author**, **Contributor**, or **Collaborator**
-- Crediting [Your Name] as **Reviewer**, **Consultant**, or **Supervisor**
+- Crediting Théo P. A. Lesage as **Author** of the derivative
+- Crediting Théo P. A. as **Co-author**, **Contributor**, or **Collaborator**
+- Crediting Théo P. A. as **Reviewer**, **Consultant**, or **Supervisor**
 - Any form of attribution that implies the author reviewed, validated, or participated in the derivative work
 
 ---
@@ -39,8 +39,8 @@ When distributing a derivative work, **the following are explicitly forbidden** 
 
 | Usage | Required Credit | Forbidden |
 |---|---|---|
-| Full or partial verbatim use | Author: [Your Name] | — |
-| Modified / extended / translated work | Inspired by: [Your Name] | Listing [Your Name] as Author, Co-author, or Contributor |
+| Full or partial verbatim use | Author: Théo P. A. Lesage | — |
+| Modified / extended / translated work | Inspired by: Théo P. A. Lesage | Listing Théo P. A. Lesage as Author, Co-author, or Contributor |
 
 ---
 
@@ -50,4 +50,4 @@ In accordance with applicable law — including French *droit moral* (Code de la
 
 ---
 
-*For permissions beyond the scope of this addendum, contact: [your@email.com]*
+*For permissions beyond the scope of this addendum, contact: [pro.theolesage@gmail.com](mailto:pro.theolesage@gmail.com)*
