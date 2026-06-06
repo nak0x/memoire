@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "readings/Toutes les époques sont dégeulasses.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -27,15 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "directions/1. Digital devices in alternatives childhoods.md",
-                "mode": "source",
+                "file": "directions/README.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1. Digital devices in alternatives childhoods"
+              "title": "README"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -108,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "readings/Toutes les époques sont dégeulasses.md",
+                "file": "directions/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Toutes les époques sont dégeulasses"
+              "title": "Backlinks for README"
             }
           },
           {
@@ -127,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "readings/Toutes les époques sont dégeulasses.md",
+                "file": "directions/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Toutes les époques sont dégeulasses"
+              "title": "Outgoing links from README"
             }
           },
           {
@@ -170,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "readings/Toutes les époques sont dégeulasses.md",
+                "file": "directions/README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Toutes les époques sont dégeulasses"
+              "title": "Outline of README"
             }
           }
         ]
@@ -197,12 +198,16 @@
       "bases:Create new base": false
     }
   },
-  "active": "ffd2179ba08b06c3",
+  "active": "84ef8bc59f035a15",
   "lastOpenFiles": [
+    "README.md",
+    "readings/README.md",
+    "directions/README.md",
     "directions/1. Digital devices in alternatives childhoods.md",
+    "directions/2. Test direction.md",
+    "Researches - Initial phases.md",
     "readings/Toutes les époques sont dégeulasses.md",
     "readings",
-    "Researches - Initial phases.md",
     "Untitled.base",
     "directions"
   ]
