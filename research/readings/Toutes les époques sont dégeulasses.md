@@ -1,0 +1,16 @@
+[Laure Murat](https://fr.wikipedia.org/wiki/Laure_Murat) - [Toutes les époques sont dégeulasses](https://editions-verdier.fr/livre/toutes-les-epoques-sont-degueulasses/) 
+
+## Ce que j'en retiens
+Aujourd'hui, à des fins commerciales et de normalisation, les maisons d'édition n'hésitent pas à déformer et minimiser les propos de certains auteurs. L'autrice décrit cela comme un processus réducteur qui retire le sens original à leurs œuvres. Cependant, elle ne fait pas l'apologie des contenus violents, discriminants ou qui font appel à la haine, étant tout à fait consciente que certaines œuvres, écrites dans un certain contexte, peuvent aujourd'hui blesser et faire du mal.
+
+Afin de répondre à ce problème, Laure Murat se refuse à amender des textes déjà écrits — d'autant plus quand l'auteur n'est plus là et ne pourrait, ce faisant, valider ou refuser l'amendement. Elle ne condamne pas non plus les auteurs actuels qui, de leur plein gré, adaptent aujourd'hui leurs œuvres afin de les rendre plus digestes.
+
+Elle propose cependant l'usage — déjà courant — des préfaces, postfaces, notes et annexes comme sources de contexte pouvant élever le niveau du lecteur et aiguiser son esprit critique dans l'appréciation de l'œuvre.
+
+Cette approche, déjà utilisée, est encore trop souvent employée pour dédouaner l'auteur·ice plutôt que pour donner des clefs de lecture — ce qui entache son caractère utile et élevateur.
+
+Sa réponse est en réalité simple et relève du bon sens : éduquer et rendre libre par la connaissance. Ce qui, selon elle, est une piste intéressante, bien que souvent accaparée par une élite afin de créer un entre-soi de clefs de lecture et de compréhension difficiles d'accès, limitant la connaissance à une classe capable d'en apprécier les nuances.
+
+Par ailleurs, le titre et son sens méritent d'être relevés : « Toutes les époques sont dégueulasses » est une thèse en soi — l'idée qu'aucune époque n'échappe à ses propres angles morts moraux, et qu'on ne peut donc pas juger le passé depuis un présent qu'on imagine moral. Cela constitue un élément central dans le propos de Laure Murat. Selon elle, notre morale n'est pas la même que celle des siècles passés et ne sera pas non plus la même que celle des siècles à venir. Il y a fort à parier que dans cent, deux cents ans, on regardera notre époque avec autant d'interrogations et de dégoût que le regard que l'on pose aujourd'hui sur les siècles passés.
+
+Pour revenir sur un point primordial dans l'analyse : les intérêts commerciaux sont aujourd'hui la principale motivation des éditeurs à modifier les œuvres, et cela pose problème. Comme le dit Murat : « Dans la plupart des cas, la visée n'est pas prioritairement la morale, l'antiracisme ou la lutte contre les violences sexistes, comme on essaie de nous le faire croire, mais plus simplement l'argent. [...] C'est exclusivement pour conserver leur valeur lucrative que les éditeurs ont procédé à ces nettoyages approximatifs. » Une motivation purement lucrative ne pouvant garantir ni la rigueur ni le respect de l'œuvre originale, ce qui participe selon l'autrice à rendre cet acte inutile, réducteur et vide de sens.
