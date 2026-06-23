@@ -18,6 +18,7 @@ This folder is the core of the research vault, gathering the early-stage work of
 
 **Notes**
 
+- [L'Immateriel](<L'Immateriel.md>)
 - [Researches - Initial phases](<Researches - Initial phases.md>)
 <!-- AUTO-INDEX:NAV:END -->
 

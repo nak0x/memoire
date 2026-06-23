@@ -16,6 +16,9 @@ This folder gathers the emerging research directions that structure the memoire,
 **Notes**
 
 - [1. Digital devices in alternatives childhoods](<1. Digital devices in alternatives childhoods.md>)
+- [2. Reducing the steepness of the creative tech learning curve](<2. Reducing the steepness of the creative tech learning curve.md>)
+- [3. Procedural generation of explorable environment](<3. Procedural generation of explorable environment.md>)
+- [4. Traumatism exorcism through lived experience](<4. Traumatism exorcism through lived experience.md>)
 <!-- AUTO-INDEX:NAV:END -->
 
 ## Notes
