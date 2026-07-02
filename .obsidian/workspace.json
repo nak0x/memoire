@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "research/README.md",
+                "file": "research/documentation/Documentation phase goal.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Documentation phase goal"
             }
           }
         ]
@@ -185,6 +185,10 @@
   },
   "active": "95a6d58fa63cb42b",
   "lastOpenFiles": [
+    "research/documentation/README.md",
+    "research/README.md",
+    "research/documentation/Documentation phase goal.md",
+    "research/documentation",
     "research/directions/2. Reducing the steepness of the creative tech learning curve.md",
     "research/readings/L'Immateriel.md"
   ]

@@ -14,6 +14,7 @@ This folder is the core of the research vault, gathering the early-stage work of
 **Folders**
 
 - [Directions/](<directions/README.md>)
+- [Documentation/](<documentation/README.md>)
 - [Readings/](<readings/README.md>)
 
 **Notes**
