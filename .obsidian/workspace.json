@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "research/documentation/Documentation phase goal.md",
+                "file": "research/directions/1. Digital devices in alternatives childhoods.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Documentation phase goal"
+              "title": "1. Digital devices in alternatives childhoods"
             }
           }
         ]
@@ -41,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -185,9 +187,11 @@
   },
   "active": "95a6d58fa63cb42b",
   "lastOpenFiles": [
-    "research/documentation/README.md",
+    "research/Researches - Initial phases.md",
+    "research/directions/1. Digital devices in alternatives childhoods.md",
     "research/README.md",
     "research/documentation/Documentation phase goal.md",
+    "research/documentation/README.md",
     "research/documentation",
     "research/directions/2. Reducing the steepness of the creative tech learning curve.md",
     "research/readings/L'Immateriel.md"
