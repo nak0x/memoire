@@ -23,6 +23,8 @@ avec son interface de dépouillement.
 | Route | Contenu |
 |---|---|
 | `/` | Présentation courte et questionnaire complet (parties A à E) |
+| `/projet` | Description du projet de recherche — **sans objet**, comme le reste du site |
+| `/entretiens` | Recrutement d'entretiens (professionnels et écoles), d'après `../terrain/protocole-entretien.md` |
 | `/a-propos` | Ce que cherche la recherche, et ce que le questionnaire n'est pas |
 | `/donnees` | Traitement, hébergement UE, conservation 6 mois, droits RGPD |
 | `/cgu` | Conditions d'utilisation |
