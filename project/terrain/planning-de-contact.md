@@ -27,6 +27,16 @@ A relancer par telephone soon
 
 Contacter avec pro.theolesage
 
+Reponse sous 4h.
+
+RDV pour une matinee, mecredi 9, jeudi 10, ven. 11. ?
+-> Se preparer bien en amont pour ne pas etre un gugus.
+
+Echange jeudi matin - en foret potentiellement.
+Envoyer un message demain pour discuter plus facilement.
+
+**Relancer le 8 a midi.**
+
 ---
 
 Passeuse de nature - Annecy
