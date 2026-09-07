@@ -7,9 +7,9 @@
 ## 🔴 Étape 1 — Note de cadrage
 **Deadline : lundi 7 septembre 2026** (5-10 pages, format visuel)
 
-- [ ] Reformuler la question de départ en resserrant le périmètre
-- [ ] Poser la tension centrale : conflit de modèle pédagogique, pas « écran vs pas écran »
-- [ ] Appui historique : Freinet / imprimerie scolaire (technologie de production)
+- [x] Reformuler la question de départ en resserrant le périmètre
+- [x] Poser la tension centrale : conflit de modèle pédagogique, pas « écran vs pas écran »
+- [x] Appui historique : Freinet / imprimerie scolaire (technologie de production)
 - [ ] Veille initiale (2-3 h) : Papert, Montessori, Tisseron, Desmurget
 - [ ] Benchmark initial — 8-10 outils en 4 familles :
       exerciseurs / suivi éducateur / constructionniste / tangible sans écran
