@@ -16,6 +16,7 @@ Ce dossier documente la phase de documentation du sujet 1 « Les objets numériq
 **Notes**
 
 - [Documentation phase goal](<Documentation phase goal.md>)
+- [online-ressources](<online-ressources.md>)
 <!-- AUTO-INDEX:NAV:END -->
 
 ## Notes

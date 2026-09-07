@@ -19,7 +19,9 @@ This folder is the core of the research vault, gathering the early-stage work of
 
 **Notes**
 
+- [Contacts](<Contacts.md>)
 - [Researches - Initial phases](<Researches - Initial phases.md>)
+- [Retours](<Retours.md>)
 <!-- AUTO-INDEX:NAV:END -->
 
 ## Notes
