@@ -119,23 +119,62 @@ vivant, en 2026 ?*
 | 4 | **Durer** — réparable, sans compte, sans serveur obligatoire, données exportables | L'obsolescence, le service qui ferme |
 | 5 | **S'effacer** — l'objet passe l'essentiel de son temps éteint, dans une poche | La notification, le flux, le score |
 
+### 2.4 Le Conseil constitutionnel vient d'écrire la thèse du projet
+
+Le 21 juillet 2026, le Parlement adoptait l'interdiction des réseaux sociaux aux moins de
+quinze ans. Le **14 août 2026**, le Conseil constitutionnel en censurait l'article 1er
+(**décision n° 2026-911 DC**), pour deux motifs qui valent bien au-delà des réseaux
+sociaux :
+
+1. **L'indifférenciation.** L'interdiction, applicable à tous les mineurs de moins de
+   quinze ans, « ne permet aucune appréciation particulière du risque pour le mineur,
+   compte tenu notamment de son âge, de son degré de maturité et de sa situation
+   familiale » — atteinte disproportionnée à la liberté d'expression et de communication.
+2. **L'imprécision de la vérification d'âge.** Le législateur n'a pas suffisamment
+   déterminé les conditions et limites dans lesquelles des millions d'utilisateurs
+   devraient prouver leur âge, sans que la loi offre elle-même les garanties nécessaires à
+   la protection de leur vie privée.
+
+> Le premier motif est, en droit constitutionnel, **exactement la thèse de Tisseron contre
+> celle de Desmurget** (§4.2) : on ne traite pas « les moins de 15 ans » comme un bloc, il
+> faut regarder l'âge, la maturité et la situation. Le second dit que la protection des
+> mineurs **ne peut pas se payer d'une surveillance généralisée** — ce qui est le fondement
+> du choix « sans compte, sans collecte » (§7.4).
+
+LICHEN n'est pas un réseau social et n'est pas concerné par ce texte. Mais il peut se
+réclamer de cette décision : **un dispositif différencié, sans collecte et sans
+identification est précisément ce que le Conseil constitutionnel oppose à l'interdiction
+indifférenciée.** L'argument de la note n'est donc plus « l'État interdit, donc il reste de
+la place pour autre chose », mais « l'État a essayé d'interdire, et le juge
+constitutionnel lui a opposé la singularité de chaque enfant ».
+
 ---
 
 ## Planche 3 — Contexte
 
 ### 3.1 Contexte pédagogique
 
-- La pédagogie du dehors sort de la marge : **plus de 2 000 écoles** en France déclarent
-  pratiquer la classe dehors (sur ~47 800), avec une accélération nette depuis 2020. Les
-  **Rencontres internationales de la classe dehors** (Poitiers, 2023, ~2 000 participants,
-  coalition de plus de 100 organisations) ont institutionnalisé le mouvement, colloque
-  scientifique inclus.
+- La pédagogie du dehors sort de la marge — mais **elle n'est comptée nulle part**.
+  L'Éducation nationale ne recense pas la classe dehors : il n'existe aucun chiffre
+  national, et c'est en soi un résultat. Ce qu'on peut établir est local ou événementiel :
+  plus de **300 écoles** et **600 classes** engagées dans la seule académie de Poitiers
+  (~14 000 élèves) ; les **Rencontres internationales de la classe dehors** (Poitiers,
+  31 mai – 4 juin 2023, **~2 000 participants**, coalition de plus de 100 organisations)
+  qui ont institutionnalisé le mouvement, colloque scientifique inclus ; plus de
+  **1 800 écoles et établissements dans 25 pays** à l'édition 2025.
+  → Une pratique en expansion rapide, **invisible dans la statistique publique**. C'est ce
+  qui justifie l'enquête de terrain plutôt que de l'excuser.
 - Le hors-contrat progresse : **502 écoles hors contrat du 1er degré en 2015 → 1 116 en 2024**
   (DEPP) ; effectifs hors contrat ~13 100 en 2010 → ~83 000 en 2023. Les écoles démocratiques
   et Sudbury représentent une vingtaine à une trentaine de petites structures (EUDEC France).
 - L'instruction en famille s'est resserrée : passage de la **déclaration à l'autorisation
   préalable** (loi du 24/08/2021), 30 644 enfants autorisés en 2024-2025 sur 40 846 demandes,
-  **taux de refus passé de 11 % (2022-23) à 23 % (2024-25)** (Cour des comptes, S2025-0795).
+  **taux de refus passé de 11 % (2022-23) à 23 % (2024-25)**, après recours administratif
+  préalable (Cour des comptes, S2025-0795, p. 41). La Cour précise que ces 23 % restent
+  *inférieurs* aux 26 % de refus de droit commun de la période transitoire : **le
+  durcissement tient à la bascule déclaration → autorisation, pas à la sévérité de
+  l'examen**. Le vrai chiffre du resserrement est ailleurs — **−36 % d'enfants concernés
+  en un an**.
   → Une population motivée, contrainte, et en demande de ressources autonomes.
 
 ### 3.2 Contexte réglementaire
@@ -144,7 +183,7 @@ vivant, en 2026 ?*
 |-------|-------|----------------------------|
 | RGPD art. 8 + seuil français à 15 ans | Consentement numérique des mineurs | Le design par défaut doit être **sans collecte** |
 | Loi Studer (2022, applicable 13/07/2024) | Contrôle parental obligatoire sur tout appareil neuf vendu en France | Un objet dédié à l'enfant entre dans le champ |
-| Loi restreignant les réseaux sociaux aux moins de 15 ans (adoptée juillet 2026) | Vérification d'âge généralisée | La puissance publique choisit la voie restrictive → l'espace pour un outil **non social** s'élargit |
+| Loi restreignant les réseaux sociaux aux moins de 15 ans (adoptée le 21/07/2026) — **article 1er censuré le 14/08/2026**, décision n° 2026-911 DC | Le Conseil constitutionnel juge l'interdiction indifférenciée **disproportionnée** (elle ne permet « aucune appréciation particulière du risque » selon l'âge, la maturité et la situation familiale), et la vérification d'âge **insuffisamment encadrée** au regard de la vie privée | ⭐ **L'appui juridique le plus fort du projet** — voir §2.4 |
 | Loi AGEC (2020) → **indice de durabilité** (janvier 2025, TV puis lave-linge, extension prévue) | Fiabilité, robustesse, réparabilité affichées | Le vocabulaire réglementaire de la durabilité existe : le projet peut s'y adosser |
 
 ### 3.3 Contexte environnemental — l'argument le plus solide du projet
@@ -153,10 +192,15 @@ vivant, en 2026 ?*
 
 - **79 % de l'empreinte carbone du numérique provient des terminaux** (contre 16 % centres
   de données, 5 % réseaux) ;
-- la **fabrication** représente environ les quatre cinquièmes de cette empreinte ;
-- sans action, les émissions du secteur pourraient **tripler d'ici 2050** ;
-- le levier identifié comme principal est **l'allongement de la durée de vie** des équipements
-  (réparation, reconditionnement, sobriété).
+- la **fabrication** représente environ les quatre cinquièmes de cette empreinte — l'impact
+  est payé *avant* le premier allumage ;
+- au **scénario tendanciel**, les émissions du secteur croissent de **+45 % d'ici 2030** et
+  de **+187 % d'ici 2050** (soit près du triple) ;
+- des cinq scénarios prospectifs, **un seul réduit l'empreinte** — « génération frugale »,
+  à −45 %. Le plus défavorable, à **+372 %**, est le « pari réparateur » : celui qui mise
+  sur la technique et la réparabilité **sans contraindre la demande**.
+  → **Réparer ne suffit pas si l'on continue d'acheter.** Un projet qui se contenterait de
+  revendiquer un objet réparable se rangerait exactement dans le pire scénario.
 
 **Conséquence directe.** Un appareil qui prétend rapprocher un enfant de la nature et qui
 serait remplacé tous les trois ans serait une contradiction performative. La longévité n'est
@@ -194,16 +238,21 @@ et inclusion délibérée d'éducateurs hostiles au numérique dans le panel (§
 - **Michel Desmurget**, *La Fabrique du crétin digital* (2019) — position maximaliste. À
   connaître pour la soutenance : sa cible réelle est le **temps d'écran récréatif passif**,
   pas l'outil de production. L'argument se retourne, il ne se réfute pas.
-- **Livingstone & Helsper**, paradoxe risques/opportunités — la médiation restrictive réduit
-  l'exposition *et* les compétences ; la médiation habilitante développe les compétences *et*
-  l'exposition. **Aucune stratégie n'optimise les deux.** Et la stratégie habilitante
+- **Livingstone & Helsper** (2008) établissent la taxonomie des quatre stratégies de
+  médiation parentale — co-usage actif, restriction des interactions, restriction technique,
+  surveillance — et montrent que **les restrictions techniques ne réduisent pas
+  nécessairement le risque**. Le *paradoxe risques/opportunités* proprement dit vient de
+  leurs travaux ultérieurs et du réseau **EU Kids Online** : la médiation restrictive réduit
+  l'exposition *et* les compétences ; la médiation habilitante développe les compétences
+  *et* l'exposition. **Aucune stratégie n'optimise les deux.** Et la stratégie habilitante
   présuppose le capital numérique qu'elle est censée transmettre → enjeu d'équité, encore.
 
 ### 4.3 Le résultat qui contredit l'intuition de départ — et qui structure tout le projet
 
-**Miles Richardson & le Nature Connectedness Research Group (Univ. Derby, 2017, *PLOS ONE*)**
-identifient cinq voies vers la connexion à la nature : **sens, émotion, beauté, sens/signification,
-compassion**. Le résultat central est négatif et il vise le projet de plein fouet :
+**Lumber R., Richardson M. & Sheffield D.** (*Nature Connectedness Research Group*, Univ.
+Derby, 2017, *PLoS ONE* 12(5): e0177186) identifient cinq voies vers la connexion à la
+nature : **contact sensoriel, émotion, compassion, sens/signification, beauté**. Le
+résultat central est négatif et il vise le projet de plein fouet :
 
 > Les activités fondées sur **la connaissance et l'identification** — nommer, classer,
 > déterminer — **n'augmentent pas la connexion à la nature**. Il faut aller au-delà.
@@ -212,6 +261,17 @@ Ce résultat est la **contrainte de conception n°1**. Il invalide par avance la
 évidente (« une appli qui identifie les espèces et raconte des choses dessus ») et impose
 que la connaissance théorique soit *attachée* à une expérience sensible, émotionnelle ou
 esthétique, jamais servie seule.
+
+**Mais le résultat a un versant positif, et il est décisif.** Les auteurs n'ont pas
+seulement corrélé : ils ont construit une **intervention de marche** dont les activités
+opérationnalisaient les cinq voies, et elle augmente significativement la connexion à la
+nature **par rapport à une marche en nature seule**. L'étude ne dit donc pas « sortez et
+taisez-vous » : elle dit que **la médiation fonctionne**, à condition qu'elle porte sur le
+sensible, l'émotion et la beauté plutôt que sur la détermination.
+
+> Autrement dit : cette littérature ne condamne pas le projet, elle le **cadre**. Il y a
+> une place pour un objet médiateur — et le cahier des charges de cet objet est écrit dans
+> les cinq voies.
 
 À compléter : **Richard Louv**, *Last Child in the Woods* (2005) — le « nature-deficit
 disorder » (concept journalistique, **non clinique** : à citer comme tel) ; **Robert Michael
@@ -252,7 +312,7 @@ c'est le pari le plus risqué du projet, et il devra être **testé sur le terra
 
 | Outil | Éditeur | Force | Limite pour ce projet |
 |-------|---------|-------|------------------------|
-| **Seek** (iNaturalist) | Cal. Academy / Nat Geo | Modèle embarqué, **sans compte, sans envoi de données**, badges, pensé enfants | Nomme sans faire connaître ; l'écran reste allumé face au vivant |
+| **Seek** (iNaturalist) | Cal. Academy / Nat Geo | Modèle embarqué, fonctionne hors ligne, **sans compte**, badges, pensé enfants. Transmission minimisée : images envoyées pour l'identification puis supprimées, coordonnées arrondies à 2 décimales, journaux conservés ≤ 60 jours, aucun cookie | Nomme sans faire connaître ; l'écran reste allumé face au vivant. ⚠️ « Sans compte » ne veut pas dire « rien ne sort » |
 | **Pl@ntNet** | INRIA / CIRAD / INRAE / IRD (FR) | Précision botanique, adossé à la recherche publique française | Réseau requis ; interface adulte ; aucune profondeur pédagogique |
 | **Merlin Bird ID / Sound ID** | Cornell Lab | Identification du chant **en temps réel** — geste magique | Consommation pure ; l'enfant n'apporte rien |
 | **BirdNET** | Cornell + TU Chemnitz | Analyse d'enregistrements, usage scientifique | Orienté traitement par lots, pas terrain enfant |
@@ -277,7 +337,7 @@ c'est le pari le plus risqué du projet, et il devra être **testé sur le terra
 
 | Outil | Éditeur | Force | Limite |
 |-------|---------|-------|--------|
-| **micro:bit** | BBC / Micro:bit Foundation | ~5 €, capteurs intégrés, robuste, écosystème éducatif mondial, **on programme la machine** | Entrée technique élevée ; pas orienté vivant ; objet **de classe**, pas objet **à soi** |
+| **micro:bit** | BBC / Micro:bit Foundation | Capteurs intégrés, robuste, écosystème éducatif mondial, **on programme la machine** | **~15-20 € l'unité** (et non 5 €) : à ce prix, équiper une classe est un choix budgétaire, pas un détail. Entrée technique élevée ; pas orienté vivant ; objet **de classe**, pas objet **à soi** |
 | **Arduino Science Journal** | Arduino (ex-Google) | Transforme le téléphone en instrument de mesure et de carnet | Physique/chimie plutôt que biologie ; abandonné une première fois par Google → **contre-exemple de longévité** |
 | **PocketLab / Vernier Go Direct** | — | Qualité de mesure, catalogue pédagogique | Prix, modèle institutionnel, dépendance fournisseur |
 
@@ -289,7 +349,7 @@ c'est le pari le plus risqué du projet, et il devra être **testé sur le terra
 | Référence | Force | Limite / enseignement |
 |-----------|-------|------------------------|
 | **Toniebox / Yoto Player** | **Sans écran**, très robuste (boîtier tissu, résiste aux chutes), 3-12 ans, l'enfant manipule un objet physique pour déclencher le contenu | Consommation de contenu ; cartes propriétaires ; **le modèle économique est dans le contenu** — à ne pas reproduire |
-| **Garmin eTrex** | L'archétype de l'objet outdoor qui dure : IP67, MIL-STD-810, ~130 h sur 2 piles AA, gamme née en 2000 et **toujours commercialisée** | Fermé, cher, conçu pour un adulte. Mais c'est **l'étalon de longévité** du projet |
+| **Garmin eTrex** | L'archétype de l'objet outdoor qui dure : IPX7, 25 h sur **deux piles AA standard**, aucun compte ni serveur, gamme née en **décembre 1999** et **toujours commercialisée** (22x/32x, 2019) | Fermé, cher, conçu pour un adulte ; la longévité y est un effet du conservatisme industriel, pas d'un choix d'ouverture. Mais c'est **l'étalon de longévité** du projet : *est-ce que ça marchera encore dans vingt ans, sans son fabricant ?* |
 | **Kiwix / ZIM + Internet-in-a-Box** | Wikipédia et corpus complets **hors ligne**, format ouvert, associatif | Pas un objet mais un fonds documentaire. Preuve qu'une encyclopédie entière tient hors ligne : la « profondeur sans plafond » (E3) est réaliste |
 | **Contre-référence non numérique :** loupe de botaniste, clés de détermination Belin/Delachaux, carnet de terrain (*nature journaling*, John Muir Laws) | Zéro batterie, durée de vie illimitée, transmissible, **déjà adoptés par le terrain** | **C'est l'étalon à battre.** Si l'objet numérique ne fait pas mieux que le carnet + la loupe, il n'a pas de raison d'exister. |
 
@@ -340,7 +400,7 @@ reliée dans une couverture de cuir, *est déjà* un appareil de terrain durable
 | Élément | Ce que c'est | Ce qu'il apporte |
 |---------|--------------|------------------|
 | **La reliure** | Cuir pleine fleur, cousue, format carnet, fermeture par lien | Se patine au lieu de s'abîmer ; amortit les chutes ; se répare chez un relieur, pas dans un centre agréé |
-| **L'écran** | Dalle **e-ink monochrome**, rafraîchissement de l'ordre de **30 images par seconde**, lisible en plein soleil, autonomie en semaines | Assez rapide pour montrer un mouvement — une croissance, un cycle, une coupe qui tourne — et **trop lente pour la vidéo et le défilement infini**. La sobriété est garantie par la matière, pas par une règle |
+| **L'écran** | Dalle **e-ink monochrome**, animation plafonnée à **30 images par seconde**, lisible en plein soleil, autonomie en semaines | Assez rapide pour montrer un mouvement — une croissance, un cycle, une coupe qui tourne. La vidéo et le défilement infini sont exclus non par impuissance de la dalle mais **par le budget d'autonomie** (voir §7.3 *bis*) |
 | **Le bloc-notes** | Papier et crayon, glissés dans la reliure | Le premier geste reste manuel : décrire et dessiner avant de chercher. C'est ce qui fait tenir le principe « Différer » (§2.3) |
 | **La loupe** | Loupe de botaniste, logée dans la couverture | Le seul instrument qui augmente réellement l'œil. Zéro batterie, durée de vie illimitée |
 | **L'herbier** | Feuillets buvards et pochettes en fin de carnet | Ce qui a été ramassé reste dans l'objet. La collection est physique ; l'écran ne fait que l'annoter |
@@ -363,9 +423,37 @@ C'est la réponse à la contrainte Richardson (§4.3) : ces images ne sont pas u
 connaissance, ce sont un support d'**émerveillement** — la voie « beauté » — qui ouvre ensuite
 sur la connaissance.
 
-En creux, la matière dit aussi ce que l'écran ne fera jamais : ni photographie léchée, ni
-vidéo, ni fil à faire défiler. Le e-ink l'interdit ; le projet en fait un argument plutôt qu'une
-limite.
+### 7.3 bis — Ce que le e-ink interdit vraiment : une mise au point
+
+Il serait commode d'écrire que le e-ink est *incapable* d'afficher de la vidéo, et que la
+sobriété est donc garantie par la matière. **C'est faux, et il vaut mieux le dire avant que
+le jury ne le dise.** En 2026, Dasung commercialise un moniteur e-ink à **60 Hz**, des
+liseuses à **50 Hz** existent, et certains constructeurs annoncent des modes de
+rafraîchissement à 80 images/s. Le e-ink fait de la vidéo.
+
+Ce qui reste vrai, c'est que **la vitesse se paie**, sur trois postes : le contraste (les
+modes rapides réduisent les niveaux de gris), la rémanence (l'image précédente persiste), et
+surtout **l'autonomie** — un e-ink ne consomme qu'au changement d'image ; à 60 Hz, il change
+soixante fois par seconde et perd tout son avantage énergétique.
+
+> **Formulation retenue.** Le e-ink ne rend pas la vidéo *impossible*, il la rend
+> **coûteuse et laide**. Un appareil réglé pour tenir plusieurs semaines sur une charge, en
+> niveaux de gris et sans rémanence, ne peut pas simultanément servir de lecteur vidéo.
+> **Le choix d'un budget d'autonomie *est* le choix de la sobriété.**
+
+La sobriété redevient donc une **décision de conception assumée**, non une fatalité
+physique — ce qui est moins confortable, et plus honnête. Elle doit alors être
+**verrouillée**, pas seulement choisie :
+
+| Paramètre | Cible | Pourquoi |
+|-----------|-------|----------|
+| Autonomie en usage de terrain | **≥ 2 semaines** | Une sortie hebdomadaire sur un trimestre sans y penser |
+| Rafraîchissement maximal | **≤ 30 im/s**, sur animation déclenchée uniquement | Suffit à un cycle ou une rotation ; insuffisant pour un usage vidéo confortable |
+| Durée maximale d'une animation | **≤ 10 s** | Au-delà, on regarde un film |
+| Mode par défaut | **Image fixe** | L'animation est une exception demandée, pas l'état normal |
+
+Ces quatre lignes forment un **critère d'acceptation du prototype**, au même titre que
+« Différer » : si le verrou saute, l'objet devient une tablette.
 
 ### 7.4 Intentions de design
 
@@ -419,6 +507,15 @@ limite.
 - **Le principe « Différer » tient-il face à un enfant de 9 ans ?** — à tester, pas à décréter.
 - **Objet dédié : horizon ou hors-sujet ?** — à trancher après les premiers retours terrain.
 
+**Deux contradictions non résolues**, écrites ici plutôt que découvertes en soutenance :
+
+- ⚠️ **La batterie.** Le principe « Durer » exige la réparabilité ; or quasiment aucune
+  liseuse n'a de batterie remplaçable par l'utilisateur. Le matériel détourné entre en
+  conflit avec le principe qu'il est censé servir. À arbitrer en étape 3.
+- ⚠️ **Le cuir.** Un projet dont l'argument central est environnemental (§3.3) ne peut pas
+  choisir une matière d'origine animale sans en connaître l'impact — tannage, élevage.
+  Alternatives à étudier : cuir de récupération, tannage végétal, textile ciré.
+
 ### 9.3 Suite immédiate — les 3 semaines vers l'étape 2 (29/09)
 
 | Quand | Quoi |
@@ -440,12 +537,20 @@ limite.
 ### Sources principales de cette note
 
 - ADEME & Arcep, *Évaluation de l'empreinte environnementale du numérique en France en 2020, 2030 et 2050*, 2023 — [arcep.fr](https://www.arcep.fr/la-regulation/grands-dossiers-thematiques-transverses/lempreinte-environnementale-du-numerique/etude-ademe-arcep-empreinte-environnemental-numerique-2020-2030-2050.html)
-- Richardson M. et al., *Beyond knowing nature: five pathways to nature connectedness*, PLOS ONE, 2017 — [findingnature.org.uk](https://findingnature.org.uk/2017/05/10/beyond-knowing-nature/) · [derby.ac.uk](https://www.derby.ac.uk/news/2021/new-guide-shows-the-pathways-to-a-stronger-connection-with-nature/)
+- Conseil constitutionnel, **décision n° 2026-911 DC du 14 août 2026** (censure de l'interdiction des réseaux sociaux aux moins de 15 ans) — [conseil-constitutionnel.fr](https://www.conseil-constitutionnel.fr/decision/2026/2026911DC.htm)
+- Lumber R., Richardson M. & Sheffield D., *Beyond knowing nature: Contact, emotion, compassion, meaning, and beauty are pathways to nature connection*, PLoS ONE 12(5): e0177186, 2017 — [doi.org](https://doi.org/10.1371/journal.pone.0177186) · [findingnature.org.uk](https://findingnature.org.uk/2017/05/10/beyond-knowing-nature/)
+- Livingstone S. & Helsper E. J., *Parental Mediation of Children's Internet Use*, Journal of Broadcasting & Electronic Media 52(4):581-599, 2008 — [eprints.lse.ac.uk](https://eprints.lse.ac.uk/25723/)
+- Garmin, spécifications eTrex 22x/32x — [garmin.com](https://www8.garmin.com/manuals/webhelp/eTrex22x-32x/EN-US/GUID-5AB8B0E9-F1F4-4368-90F9-70660AB5D621.html)
 - Vigie-Nature École, Muséum national d'Histoire naturelle — [vigienature.fr](https://www.vigienature.fr/fr/vigie-nature-ecole)
 - Rencontres internationales de la classe dehors, Poitiers 2023 — [ac-poitiers.fr](https://www.ac-poitiers.fr/du-31-mai-au-4-juin-2023-a-poitiers-les-premieres-rencontres-internationales-de-la-classe-dehors-124634)
 - Ministère de la Transition écologique, *Indice de réparabilité et indice de durabilité* (loi AGEC art. 16) — [ecologie.gouv.fr](https://www.ecologie.gouv.fr/dossiers/comment-consommer-plus-durablement/prendre-compte-indices-reparabilite-durabilite)
 - Serge Tisseron, balises *3-6-9-12* — [3-6-9-12.org](https://www.3-6-9-12.org/les-balises-3-6-9-12/)
 - Papert S., *Mindstorms* (1980) · Freinet C., l'imprimerie à l'école (1924) · Bernstein B., *Class, Codes and Control* · Lahire B., *Tableaux de familles* (1995) · Leroy G., *Sociologie des pédagogies alternatives* (2022) · Louv R., *Last Child in the Woods* (2005)
 - Données DEPP / Cour des comptes (rapport S2025-0795) : voir la revue de littérature du dossier — [[alternative-childhood-educations-research]]
+
+> **Appareil critique complet** dans `project/sources/` : [[table-de-sourcage]] tient la
+> correspondance affirmation → source pour chaque planche, [[chiffres-cles]] la définition
+> exacte de chaque chiffre, et [[verifications]] le journal des écarts relevés au sourçage —
+> dont ceux corrigés dans cette version.
 
 [Liens vers la version en ligne](https://claude.ai/code/artifact/12e2402c-fc26-468e-9c4a-9dd7afb104f1?via=auto_preview)

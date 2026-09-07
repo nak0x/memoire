@@ -26,10 +26,13 @@ l'appareil de sources qui doit tenir derrière chaque affirmation d'un rendu.
 
 ## État au 07/09/2026
 
-Sourçage de la note de cadrage : **fait**, avec **quatre écarts identifiés** et
-**un fait nouveau postérieur à la rédaction** — voir [[verifications]]. Aucun n'a été
-corrigé dans la note de cadrage rendue le 07/09 ; les corrections partent dans le
-dossier de recherche de l'étape 2 (29/09).
+Sourçage de la note de cadrage : **fait**, avec **cinq écarts identifiés** et **un fait
+nouveau postérieur à la rédaction** (la censure du 14/08/2026) — voir [[verifications]].
+**Tous ont été corrigés** dans [[note-de-cadrage]] et dans sa version en ligne le 07/09.
+
+Deux contradictions restent **non résolues et assumées** : la batterie non remplaçable des
+liseuses face au principe « Durer », et l'impact environnemental du cuir. Elles sont
+écrites dans la note plutôt que découvertes en soutenance — voir `objet/README.md`.
 
 ## Notes
 

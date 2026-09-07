@@ -4,24 +4,25 @@
 > affirmation chiffrée ou attribuée de [[note-de-cadrage]] a été confrontée à sa source
 > primaire quand elle existe.
 >
-> **La note de cadrage n'a pas été corrigée.** Elle est rendue telle qu'elle a été
-> écrite ; ce fichier est la liste de ce qui doit changer à l'étape 2. C'est aussi, en
-> soi, une pièce à montrer au jury : le sourçage a produit des corrections, ce qui est
-> le signe qu'il a réellement eu lieu.
+> **Les corrections ont été appliquées** à [[note-de-cadrage]] et à sa version en ligne le
+> 07/09/2026, après cette passe. Ce fichier conserve le détail de chaque écart : c'est la
+> pièce qui montre au jury que le sourçage a réellement eu lieu, et qu'il a produit des
+> corrections plutôt qu'une validation de complaisance.
 
 ## Récapitulatif
 
-| # | Objet | Statut | Gravité |
-|---|-------|--------|---------|
-| V1 | Loi réseaux sociaux < 15 ans | ⛔ **Fait nouveau — censure constitutionnelle** | **Élevée** |
-| V2 | Garmin eTrex : « IP67, MIL-STD-810, ~130 h » | ⚠️ **Trois erreurs** | Moyenne |
-| V3 | « Le e-ink est incapable par nature d'afficher de la vidéo » | ⚠️ **Argument caduc** | **Élevée** |
-| V4 | « Plus de 2 000 écoles » pratiquant la classe dehors | ❓ **Non sourcé** | Moyenne |
-| V5 | Richardson 2017 : attribution de la paternité | ⚠️ Citation imprécise | Faible |
-| V6 | IEF : taux de refus 11 % → 23 % | ✅ **Confirmé** (mais définition à préciser) | — |
-| V7 | ADEME-Arcep : 79 % / 4-5ᵉ / ×3 | ✅ **Confirmé** (préciser le scénario) | — |
-| V8 | Hors-contrat : 502 → 1 116 écoles | ✅ **Confirmé** | — |
-| V9 | Loi Studer, loi AGEC | ✅ **Confirmé** | — |
+| # | Objet | Statut | Gravité | Corrigé |
+|---|-------|--------|---------|---------|
+| V1 | Loi réseaux sociaux < 15 ans | ⛔ **Fait nouveau — censure constitutionnelle** | **Élevée** | ✔ §3.2 + nouveau §2.4 |
+| V2 | Garmin eTrex : « IP67, MIL-STD-810, ~130 h » | ⚠️ **Trois erreurs** | Moyenne | ✔ §6.1 famille D |
+| V3 | « Le e-ink est incapable par nature d'afficher de la vidéo » | ⚠️ **Argument caduc** | **Élevée** | ✔ nouveau §7.3 *bis* |
+| V4 | « Plus de 2 000 écoles » pratiquant la classe dehors | ❓ **Non sourcé** | Moyenne | ✔ §3.1, chiffre retiré |
+| V5 | Richardson 2017 : attribution de la paternité | ⚠️ Citation imprécise | Faible | ✔ §4.3 + versant positif ajouté |
+| V6 | IEF : taux de refus 11 % → 23 % | ✅ **Confirmé** (définition à préciser) | — | ✔ §3.1, nuance ajoutée |
+| V7 | ADEME-Arcep : 79 % / 4-5ᵉ / ×3 | ✅ **Confirmé** (nommer le scénario) | — | ✔ §3.3, scénarios détaillés |
+| V8 | Hors-contrat : 502 → 1 116 écoles | ✅ **Confirmé** | — | — |
+| V9 | Loi Studer, loi AGEC | ✅ **Confirmé** | — | — |
+| V10 | Seek « sans envoi de données » ; micro:bit « ~5 € » | ⚠️ Deux erreurs | Moyenne | ✔ §6.1 familles A et C |
 
 ---
 
