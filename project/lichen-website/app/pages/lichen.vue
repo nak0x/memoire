@@ -49,12 +49,19 @@ const chiffres = [
   { v: 0, s: '', t: 'chiffre national ne recense la classe dehors. Une pratique en expansion rapide, et invisible dans la statistique publique — c’est ce qui justifie une enquête.', src: 'Éducation nationale' }
 ]
 
+const LETTRES = [...'LICHEN']
+
 const racine = ref<HTMLElement | null>(null)
+const titre = ref<HTMLElement | null>(null)
 let ctx: { revert: () => void } | null = null
+let cleanup: (() => void) | null = null
 
 // Enregistré ici, pas après l'`await` : passé le premier point d'attente,
 // Vue n'a plus d'instance courante et le nettoyage ne serait jamais posé.
-onBeforeUnmount(() => ctx?.revert())
+onBeforeUnmount(() => {
+  cleanup?.()
+  ctx?.revert()
+})
 
 onMounted(async () => {
   const el = racine.value
@@ -78,11 +85,100 @@ onMounted(async () => {
   gsap.registerPlugin(ScrollTrigger)
 
   ctx = gsap.context(() => {
-    // — Hero : le titre se lève lettre par lettre, le reste suit.
-    gsap
-      .timeline({ defaults: { ease: 'power3.out' } })
-      .to('[data-lettre]', { yPercent: 0, opacity: 1, duration: 1.1, stagger: 0.075 })
-      .to('[data-hero]', { y: 0, opacity: 1, duration: 0.9, stagger: 0.13 }, '-=0.55')
+    // — Hero : le texte monte doucement. Le titre, lui, est déjà là ; il ne
+    //   s'anime qu'à l'approche du curseur (voir plus bas).
+    gsap.to('[data-hero]', { y: 0, opacity: 1, duration: 0.9, ease: 'power3.out', stagger: 0.13 })
+
+    // — Le titre pousse sous la main.
+    //
+    //   Chaque lettre répond à la distance qui la sépare du curseur, avec un
+    //   affaiblissement gaussien : la plus proche grossit et se soulève, ses
+    //   voisines s'écartent et s'inclinent vers elle, et le reste ne bouge
+    //   presque pas. Tant que le pointeur n'a rien dit — au doigt, ou avant le
+    //   premier mouvement — un curseur fantôme fait l'aller-retour, et la
+    //   même mécanique suffit à faire respirer le mot.
+    const mot = titre.value
+    const lettres = mot ? gsap.utils.toArray<HTMLElement>('[data-lettre]', mot) : []
+
+    if (mot && lettres.length) {
+      // Position de repos de chaque lettre : `offsetLeft` est une mesure de
+      // mise en page, que les transformations appliquées ensuite ne faussent pas.
+      let centres: number[] = []
+      const mesurer = () => { centres = lettres.map((l) => l.offsetLeft + l.offsetWidth / 2) }
+      mesurer()
+
+      const pilote = lettres.map((l) => ({
+        e: gsap.quickTo(l, 'scale', { duration: 0.55, ease: 'power3' }),
+        x: gsap.quickTo(l, 'x', { duration: 0.55, ease: 'power3' }),
+        y: gsap.quickTo(l, 'y', { duration: 0.55, ease: 'power3' }),
+        r: gsap.quickTo(l, 'rotation', { duration: 0.7, ease: 'power3' })
+      }))
+
+      // `x` suit le curseur, `force` fond l'effet quand il s'éloigne en hauteur.
+      const main = { x: 0, force: 0 }
+      let balade: { kill: () => void } | null = null
+
+      const flaner = () => {
+        balade?.kill()
+        const l = mot.offsetWidth
+        main.x = -l * 0.12
+        balade = gsap.to(main, { x: l * 1.12, duration: 4.6, ease: 'sine.inOut', repeat: -1, yoyo: true })
+        gsap.to(main, { force: 0.5, duration: 1.4, ease: 'power2.out' })
+      }
+
+      const suivre = (ev: PointerEvent) => {
+        const r = mot.getBoundingClientRect()
+        balade?.kill()
+        balade = null
+        main.x = ev.clientX - r.left
+        // Au-delà d'une hauteur de titre au-dessus ou en dessous, l'effet s'éteint.
+        const h = Math.abs(ev.clientY - (r.top + r.height / 2)) / (r.height * 1.6)
+        gsap.to(main, { force: Math.max(0, 1 - h), duration: 0.45, ease: 'power2.out' })
+      }
+
+      const rendre = () => {
+        const h = mot.offsetHeight
+        const rayon = Math.max(90, h * 0.85)
+        for (let i = 0; i < lettres.length; i++) {
+          const d = ((centres[i] ?? 0) - main.x) / rayon
+          const cloche = Math.exp(-d * d)
+          const f = cloche * main.force
+          // `d * cloche` s'annule sous le curseur : les voisines s'écartent,
+          // la lettre visée ne tremble pas.
+          const ecart = d * cloche * main.force
+          pilote[i]!.e(1 + 0.44 * f)
+          pilote[i]!.y(-0.17 * h * f)
+          pilote[i]!.x(0.24 * h * ecart)
+          pilote[i]!.r(-15 * ecart)
+        }
+      }
+
+      let tourne = false
+      const jouer = (o: boolean) => {
+        if (o === tourne) return
+        tourne = o
+        o ? gsap.ticker.add(rendre) : gsap.ticker.remove(rendre)
+      }
+
+      // Rien ne tourne quand le titre est sorti de l'écran.
+      ScrollTrigger.create({
+        trigger: mot,
+        start: 'top bottom',
+        end: 'bottom top',
+        onToggle: (self) => jouer(self.isActive)
+      })
+
+      flaner()
+      window.addEventListener('pointermove', suivre, { passive: true })
+      window.addEventListener('resize', mesurer)
+
+      cleanup = () => {
+        jouer(false)
+        balade?.kill()
+        window.removeEventListener('pointermove', suivre)
+        window.removeEventListener('resize', mesurer)
+      }
+    }
 
     // — Apparition au défilement, pour tout ce qui est marqué.
     gsap.utils.toArray<HTMLElement>('[data-monte]').forEach((c) => {
@@ -154,13 +250,8 @@ onMounted(async () => {
       <div class="hero-in">
         <p class="sur" data-hero>Projet individuel · 2026 – 2027 · phase de terrain</p>
 
-        <h1 class="titre" aria-label="LICHEN">
-          <span class="masque"><span data-lettre>L</span></span>
-          <span class="masque"><span data-lettre>I</span></span>
-          <span class="masque"><span data-lettre>C</span></span>
-          <span class="masque"><span data-lettre>H</span></span>
-          <span class="masque"><span data-lettre>E</span></span>
-          <span class="masque"><span data-lettre>N</span></span>
+        <h1 ref="titre" class="titre" aria-label="LICHEN">
+          <span v-for="(c, i) in LETTRES" :key="i" data-lettre>{{ c }}</span>
         </h1>
 
         <p class="accroche" data-hero>
@@ -446,12 +537,16 @@ onMounted(async () => {
   gap: clamp(.1rem, 1.1vw, .55rem);
   margin: 0 0 1.4rem;
   font-size: clamp(3.2rem, 15vw, 8.5rem);
-  line-height: 1;
+  line-height: 1.12;
   letter-spacing: .04em;
   color: var(--forest-ink);
 }
-.masque { display: block; overflow: hidden; padding: 0 .02em; }
-.masque > span { display: block; will-change: transform; }
+[data-lettre] {
+  display: block;
+  padding: 0 .02em;
+  transform-origin: 50% 82%;
+  will-change: transform;
+}
 
 .accroche {
   font-family: var(--serif);
@@ -625,7 +720,6 @@ onMounted(async () => {
    Posé seulement quand le script a pris la main : sans JavaScript, ou si le
    système demande moins d'animation, la page est intégralement visible.      */
 
-.anime [data-lettre] { opacity: 0; transform: translateY(118%); }
 .anime [data-hero] { opacity: 0; transform: translateY(22px); }
 .anime [data-monte],
 .anime [data-serie] > * { opacity: 0; transform: translateY(34px); }
