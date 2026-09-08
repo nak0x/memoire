@@ -7,10 +7,10 @@ const { retentionMonths } = useRuntimeConfig().public
   <div>
     <header class="top">
       <div class="wrap top-in">
-        <NuxtLink to="/" class="brand">Enquête <span>· pédagogies du dehors</span></NuxtLink>
+        <NuxtLink to="/lichen" class="brand">Lichen <span>· enquête sur les pédagogies du dehors</span></NuxtLink>
         <nav>
           <NuxtLink to="/">Questionnaire</NuxtLink>
-          <NuxtLink to="/projet">Le projet</NuxtLink>
+          <NuxtLink to="/lichen">Le projet</NuxtLink>
           <NuxtLink to="/entretiens">Entretiens</NuxtLink>
           <NuxtLink to="/a-propos">À propos</NuxtLink>
           <NuxtLink to="/donnees">Vos données</NuxtLink>
@@ -25,7 +25,8 @@ const { retentionMonths } = useRuntimeConfig().public
     <footer class="foot">
       <div class="wrap">
         <nav>
-          <NuxtLink to="/projet">Le projet</NuxtLink>
+          <NuxtLink to="/lichen">Le projet</NuxtLink>
+          <NuxtLink to="/projet">La démarche en détail</NuxtLink>
           <NuxtLink to="/entretiens">Participer à un entretien</NuxtLink>
           <NuxtLink to="/a-propos">À propos</NuxtLink>
           <NuxtLink to="/donnees">Données personnelles</NuxtLink>
