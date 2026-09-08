@@ -1,26 +1,7 @@
-import { randomUUID, createHash } from 'node:crypto'
+import { randomUUID } from 'node:crypto'
 import { useDb, purgeGuard } from '../utils/db'
 import { validate } from '../utils/validate'
-
-// Limitation de débit strictement en mémoire : l'adresse IP est hachée,
-// jamais écrite en base, et disparaît au redémarrage. Aucune trace.
-const seen = new Map<string, number[]>()
-const WINDOW = 3_600_000
-const MAX_PER_WINDOW = 6
-
-function tooMany(event: any): boolean {
-  const ip =
-    getRequestHeader(event, 'x-forwarded-for')?.split(',')[0]?.trim() ||
-    event.node?.req?.socket?.remoteAddress ||
-    'inconnu'
-  const key = createHash('sha256').update(ip).digest('hex').slice(0, 16)
-  const now = Date.now()
-  const hits = (seen.get(key) || []).filter((t) => now - t < WINDOW)
-  hits.push(now)
-  seen.set(key, hits)
-  if (seen.size > 5000) seen.clear()
-  return hits.length > MAX_PER_WINDOW
-}
+import { tooMany } from '../utils/rate'
 
 export default defineEventHandler(async (event) => {
   const body = await readBody(event)

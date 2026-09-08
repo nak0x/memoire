@@ -1,12 +1,15 @@
-# Questionnaire de terrain — LICHEN
+# Questionnaires de terrain — LICHEN
 
-Application du questionnaire décrit dans [`../terrain/questionnaire.md`](../terrain/questionnaire.md),
-avec son interface de dépouillement.
+Application des deux questionnaires du projet, avec leur interface de dépouillement :
 
-> **Contrainte de fond, à ne pas contourner :** le questionnaire ne présente aucun objet et
-> ne demande à personne si une idée lui plaît. Il mesure l'état d'un terrain, pas l'accueil
-> d'un projet. Toute évolution qui décrit le prototype dans les pages publiques invalide les
-> réponses déjà collectées.
+- [`../terrain/questionnaire.md`](../terrain/questionnaire.md) — professionnels du dehors, sur `/`
+- [`../terrain/questionnaire-public.md`](../terrain/questionnaire-public.md) — adultes avec ou sans enfant, sur `/dehors`
+
+> **Contrainte de fond, à ne pas contourner :** aucun des deux questionnaires ne présente
+> d'objet, et aucun ne demande à personne si une idée lui plaît. Ils mesurent l'état d'un
+> terrain, pas l'accueil d'un projet. Toute évolution qui décrit le prototype dans les pages
+> publiques invalide les réponses déjà collectées — celles des deux questionnaires à la
+> fois, puisqu'ils partagent le même site.
 
 ## Ce que c'est
 
@@ -14,7 +17,8 @@ avec son interface de dépouillement.
 |---|---|
 | Cadre | Nuxt 4 (Vue 3, Nitro), rendu serveur, pas de framework CSS |
 | Base | SQLite via `node:sqlite` — module natif de Node, zéro dépendance |
-| Graphiques | Chart.js, chargé **uniquement** sur `/results` |
+| Graphiques | Chart.js, chargé **uniquement** sur les pages `/results` |
+| Animation | GSAP, chargé **uniquement** sur `/lichen` — les questionnaires n'ont aucun script d'agrément |
 | Poids public | pas de police distante, pas d'image, pas de traceur, aucune requête tierce |
 | Thème | clair ou sombre selon `prefers-color-scheme`, sans script |
 
@@ -22,15 +26,19 @@ avec son interface de dépouillement.
 
 | Route | Contenu |
 |---|---|
-| `/` | Présentation courte et questionnaire complet (parties A à E) |
+| `/` | Questionnaire **professionnels** — présentation courte et parties A à E |
+| `/dehors` | Questionnaire **grand public** — adultes avec ou sans enfant |
+| `/lichen` | Page de présentation du projet — **sans objet**, comme le reste du site |
 | `/projet` | Description du projet de recherche — **sans objet**, comme le reste du site |
 | `/entretiens` | Recrutement d'entretiens (professionnels et écoles), d'après `../terrain/protocole-entretien.md` |
 | `/a-propos` | Ce que cherche la recherche, et ce que le questionnaire n'est pas |
 | `/donnees` | Traitement, hébergement UE, conservation 6 mois, droits RGPD |
 | `/cgu` | Conditions d'utilisation |
 | `/mentions-legales` | Éditeur, hébergeur, licences (CC BY 4.0 pour le contenu, MIT pour le code) |
-| `/results` | 🔒 Tableau de bord — **non listé, non indexé, protégé par mot de passe** |
+| `/results` | 🔒 Tableau de bord des réponses professionnelles — **non listé, non indexé, protégé par mot de passe** |
 | `/results/<id>` | 🔒 Une réponse, avec le codage de la Q9 et les notes de dépouillement |
+| `/results/public` | 🔒 Tableau de bord des réponses du grand public |
+| `/results/public/<id>` | 🔒 Une réponse du grand public, avec son codage |
 
 `/results` n'apparaît nulle part : aucun lien dans les pages publiques, aucune entrée dans
 `sitemap.xml`, et **volontairement aucune ligne dans `robots.txt`** — un `Disallow: /results`
@@ -64,8 +72,10 @@ par trois voies indépendantes :
    l'image ;
 3. **En garde-fou**, au plus une fois par heure, au fil des envois.
 
-Chaque exécution est consignée dans la table `purge_log` (date, date de coupure, nombre de
-suppressions) et affichée sur `/results`. Le bouton « Exécuter la purge maintenant » permet
+La purge porte sur **les deux tables de réponses** : ajouter une table sans l'ajouter à
+`purgeOldResponses()` romprait l'engagement pris auprès des répondants sans que rien ne le
+signale. Chaque exécution est consignée dans la table `purge_log` (date, date de coupure,
+nombre total de suppressions) et affichée sur `/results`. Le bouton « Exécuter la purge maintenant » permet
 de la déclencher à la main.
 
 ## Développement
@@ -104,25 +114,41 @@ doit être appliquée aux archives aussi.
 
 | Méthode | Route | Accès |
 |---|---|---|
-| `POST` | `/api/reponse` | public — validation, piège à robots, limitation en mémoire |
+| `POST` | `/api/reponse` | public — questionnaire professionnel |
+| `POST` | `/api/reponse-publique` | public — questionnaire grand public |
 | `GET` | `/api/health` | public — sonde du conteneur |
 | `GET` | `/api/admin/stats` | 🔒 agrégats du tableau de bord |
 | `GET` | `/api/admin/reponses` | 🔒 liste compacte |
 | `GET` `PATCH` `DELETE` | `/api/admin/reponses/<id>` | 🔒 détail, codage, effacement |
 | `GET` | `/api/admin/export` | 🔒 export CSV (contient les contacts) |
-| `POST` | `/api/admin/purge` | 🔒 purge manuelle |
+| `GET` | `/api/admin/public/stats` | 🔒 agrégats du questionnaire grand public |
+| `GET` | `/api/admin/public/reponses` | 🔒 liste compacte |
+| `GET` `PATCH` `DELETE` | `/api/admin/public/reponses/<id>` | 🔒 détail, codage, effacement |
+| `GET` | `/api/admin/public/export` | 🔒 export CSV du grand public |
+| `POST` | `/api/admin/purge` | 🔒 purge manuelle — **les deux tables à la fois** |
 
 ## Structure
 
 ```
-shared/options.ts          libellés du questionnaire — source unique
-app/pages/index.vue        le questionnaire
-app/pages/results/         dépouillement (layout admin)
-server/utils/db.ts         SQLite, schéma, purge de rétention
-server/utils/validate.ts   validation serveur (Q9 obligatoire si Q8 ≥ 4)
-server/middleware/admin.ts authentification Basic sur /results et /api/admin
-server/tasks/db/purge.ts   tâche planifiée quotidienne
+shared/options.ts             libellés des deux questionnaires — source unique
+app/pages/index.vue           questionnaire professionnels
+app/pages/dehors.vue          questionnaire grand public
+app/pages/lichen.vue          présentation du projet (seule page à charger GSAP)
+app/components/FondLichen.vue fond animé, dessiné à l'exécution — aucune image
+app/pages/results/            dépouillement professionnels (layout admin)
+app/pages/results/public/     dépouillement grand public
+server/utils/db.ts            SQLite, schéma des deux tables, purge de rétention
+server/utils/validate.ts      validation du questionnaire professionnel
+server/utils/validate-public.ts  validation du questionnaire grand public
+server/utils/rate.ts          limitation de débit, commune aux deux formulaires
+server/middleware/admin.ts    authentification Basic sur /results et /api/admin
+server/tasks/db/purge.ts      tâche planifiée quotidienne
 ```
+
+Les deux questionnaires **partagent volontairement** l'échelle 1-5, la liste
+d'applications et la grille de codage (`ECHELLE`, `APPS`, `CODES` dans `shared/options.ts`).
+C'est ce qui rend les deux corpus comparables sur les seuls points construits pour l'être ;
+les faire diverger annulerait l'intérêt du second questionnaire.
 
 ## Licence
 

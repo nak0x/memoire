@@ -147,7 +147,10 @@ async function purge() {
 
 <template>
   <div class="wrap-wide" v-if="s">
-    <h1>Dépouillement</h1>
+    <h1>Dépouillement — professionnels</h1>
+    <p class="meta">
+      <NuxtLink to="/results/public">Voir le questionnaire grand public →</NuxtLink>
+    </p>
     <p class="meta">
       Première réponse {{ fmt(s.premiere) }} · dernière {{ fmt(s.derniere) }} ·
       objectif {{ s.objectif }} réponses.

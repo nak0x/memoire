@@ -13,7 +13,8 @@ const { contactEmail, hostName, hostLocation, retentionMonths } = useRuntimeConf
 
     <div class="note">
       <p>
-        <strong>En une phrase :</strong> le questionnaire ne demande aucune information
+        <strong>En une phrase :</strong> les deux questionnaires de ce site — celui destiné
+        aux professionnels et celui ouvert à tous — ne demandent aucune information
         personnelle, tout est hébergé dans l’Union européenne, rien n’est utilisé en dehors de
         cette recherche, rien n’est transmis à qui que ce soit, et tout est effacé
         automatiquement au bout de {{ retentionMonths }} mois.

@@ -266,8 +266,8 @@ onMounted(async () => {
         </p>
 
         <p class="actions" data-hero>
-          <NuxtLink class="btn grand" to="/">Répondre au questionnaire</NuxtLink>
-          <NuxtLink class="btn ghost grand" to="/entretiens">Participer à un entretien</NuxtLink>
+          <NuxtLink class="btn grand" to="/dehors">Répondre — tout le monde</NuxtLink>
+          <NuxtLink class="btn ghost grand" to="/">Répondre — professionnels</NuxtLink>
         </p>
         <p class="fine" data-hero>
           Cinq minutes · sans compte · sans donnée personnelle obligatoire
@@ -474,13 +474,16 @@ onMounted(async () => {
     <!-- Appel final ---------------------------------------------------------->
     <section class="bloc final">
       <div class="wrap-mid centre">
-        <h2 data-monte>Vous sortez avec des enfants ?</h2>
+        <h2 data-monte>Deux questionnaires, cinq minutes chacun</h2>
         <p class="lede" data-monte>
-          Cinq minutes suffisent. Le questionnaire ne présente aucun objet, ne demande aucune
-          adhésion, et ne collecte rien d’obligatoire.
+          L’un s’adresse à celles et ceux qui encadrent des enfants dehors. L’autre est ouvert
+          à tout le monde, avec ou sans enfant — parce que ce que pensent les adultes
+          ordinaires du numérique et de la nature n’est mesuré nulle part. Aucun des deux ne
+          présente d’objet ni ne demande d’adhésion.
         </p>
         <p class="actions centre" data-monte>
-          <NuxtLink class="btn grand" to="/">Répondre au questionnaire</NuxtLink>
+          <NuxtLink class="btn grand" to="/dehors">Tout le monde</NuxtLink>
+          <NuxtLink class="btn grand" to="/">Professionnels du dehors</NuxtLink>
           <NuxtLink class="btn ghost grand" to="/entretiens">Proposer un entretien</NuxtLink>
         </p>
         <p class="fine" data-monte>

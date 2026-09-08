@@ -49,6 +49,37 @@ export function useDb(): DatabaseSync {
       notes        TEXT
     );
     CREATE INDEX IF NOT EXISTS idx_responses_created ON responses(created_at);
+
+    -- Second questionnaire : grand public, adultes avec ou sans enfant.
+    -- Table distincte plutôt que colonnes optionnelles dans « responses » :
+    -- les deux instruments n'ont ni le même public ni les mêmes questions, et
+    -- les mélanger produirait des moyennes qui ne veulent rien dire.
+    CREATE TABLE IF NOT EXISTS responses_public (
+      id               TEXT PRIMARY KEY,
+      created_at       TEXT NOT NULL,
+      lien             TEXT NOT NULL,
+      ages             TEXT NOT NULL DEFAULT '[]',
+      sorties          TEXT NOT NULL,
+      savoir           TEXT NOT NULL,
+      enfance          TEXT NOT NULL,
+      gestes           TEXT NOT NULL DEFAULT '[]',
+      gestes_autre     TEXT,
+      apps             TEXT NOT NULL DEFAULT '[]',
+      apps_autre       TEXT,
+      voies            TEXT NOT NULL DEFAULT '[]',
+      souvenir         TEXT,
+      position         INTEGER NOT NULL,
+      pourquoi         TEXT,
+      conditions       TEXT NOT NULL DEFAULT '[]',
+      conditions_autre TEXT,
+      age_mini         TEXT NOT NULL,
+      entretien        INTEGER NOT NULL DEFAULT 0,
+      contradicteur    TEXT,
+      contact          TEXT,
+      codes            TEXT NOT NULL DEFAULT '[]',
+      notes            TEXT
+    );
+    CREATE INDEX IF NOT EXISTS idx_public_created ON responses_public(created_at);
     CREATE TABLE IF NOT EXISTS purge_log (
       id      INTEGER PRIMARY KEY AUTOINCREMENT,
       ran_at  TEXT NOT NULL,
@@ -74,8 +105,12 @@ export function cutoffISO(): string {
 export function purgeOldResponses(): { cutoff: string; deleted: number } {
   const d = useDb()
   const cutoff = cutoffISO()
-  const res = d.prepare('DELETE FROM responses WHERE created_at < ?').run(cutoff)
-  const deleted = Number(res.changes || 0)
+  // Les deux questionnaires relèvent du même engagement de conservation :
+  // ajouter une table sans l'ajouter ici romprait la promesse faite aux
+  // répondants, sans que rien ne le signale.
+  const a = d.prepare('DELETE FROM responses WHERE created_at < ?').run(cutoff)
+  const b = d.prepare('DELETE FROM responses_public WHERE created_at < ?').run(cutoff)
+  const deleted = Number(a.changes || 0) + Number(b.changes || 0)
   d.prepare('INSERT INTO purge_log (ran_at, cutoff, deleted) VALUES (?, ?, ?)').run(
     new Date().toISOString(),
     cutoff,

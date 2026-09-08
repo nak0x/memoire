@@ -1,5 +1,5 @@
 // Seules les pages publiques. L'administration n'y figure pas.
-const PAGES = ['/', '/lichen', '/projet', '/entretiens', '/a-propos', '/donnees', '/cgu', '/mentions-legales']
+const PAGES = ['/', '/dehors', '/lichen', '/projet', '/entretiens', '/a-propos', '/donnees', '/cgu', '/mentions-legales']
 
 export default defineEventHandler((event) => {
   const base = (useRuntimeConfig().public.siteUrl || `https://${getRequestHost(event)}`).replace(/\/$/, '')

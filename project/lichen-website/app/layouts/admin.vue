@@ -10,8 +10,10 @@ useHead({ meta: [{ name: 'robots', content: 'noindex, nofollow, noarchive' }] })
       <div class="wrap-wide top-in">
         <NuxtLink to="/results" class="brand">Dépouillement <span>· accès restreint</span></NuxtLink>
         <nav>
-          <NuxtLink to="/results">Tableau de bord</NuxtLink>
-          <a href="/api/admin/export">Export CSV</a>
+          <NuxtLink to="/results">Professionnels</NuxtLink>
+          <NuxtLink to="/results/public">Grand public</NuxtLink>
+          <a href="/api/admin/export">CSV pro</a>
+          <a href="/api/admin/public/export">CSV public</a>
         </nav>
       </div>
     </header>

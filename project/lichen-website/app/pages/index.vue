@@ -106,6 +106,15 @@ async function submit() {
 
       <div class="note">
         <p>
+          <strong>Vous n’encadrez pas d’enfants ?</strong> Un second questionnaire, plus court,
+          est ouvert à tout le monde — parents, grands-parents, ou personnes sans enfant :
+          <NuxtLink to="/dehors">Les enfants, la nature et les écrans</NuxtLink>. Celui-ci
+          suppose une pratique d’encadrement régulière.
+        </p>
+      </div>
+
+      <div class="note">
+        <p>
           <strong>Aucune information personnelle n’est requise.</strong> Ni nom, ni structure, ni
           adresse. Les réponses sont hébergées dans l’Union européenne, utilisées uniquement
           pour cette recherche, et supprimées automatiquement au bout de {{ retentionMonths }} mois.
