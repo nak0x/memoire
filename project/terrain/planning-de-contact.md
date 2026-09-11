@@ -37,6 +37,8 @@ Envoyer un message demain pour discuter plus facilement.
 
 **Relancer le 8 a midi.**
 
+- A aller voir c'est a coter de l'ecole.
+
 ---
 
 Passeuse de nature - Annecy
